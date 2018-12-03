@@ -10,8 +10,8 @@ This course asset includes a Unity project with three scenes showcasing various 
 
 
 ### Versions Used
-- [Unity LTS Release 2017.4.4](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
-- [GVR SDK for Unity v1.100.1](https://github.com/googlevr/gvr-unity-sdk/releases/tag/v1.100.1)
+- [Unity LTS Release 2017.4.15](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
+- [GVR SDK for Unity v1.170.0](https://github.com/googlevr/gvr-unity-sdk/releases/tag/v1.170.0)
 - [iTween](https://assetstore.unity.com/packages/tools/animation/itween-84) v2.0.9
 - [Low Poly: Free Pack](https://assetstore.unity.com/packages/3d/environments/low-poly-free-pack-58821) v2.0
 
@@ -38,10 +38,9 @@ This course asset includes a Unity project with three scenes showcasing various 
 ### GVR SDK for Unity
 - `GoogleVR` > `Demos` is not included.
 - `GoogleVR` > `GVRVideoPlayer.unitypackage` is not included.
-- The `Max Reticle Distance` value for the `GvrReticlePointer` used in the scenes is set to `20` or higher instead of the default `10`.
 - Scripts applicable to the course have been updated to reflect Unity's API change from `UnityEngine.VR` to `UnityEngine.XR`.
 
->**Note:** If for any reason you remove and re-import GVR SDK for Unity v1.100.1, make sure you accept any API update pop-up prompts triggered by Unity. Alternatively, you can manually run the API updater (Unity menu `Assets` > `Run API Updater...`) after the import has completed.
+>**Note:** If for any reason you remove and re-import GVR SDK for Unity v1.170.0, make sure you accept any API update pop-up prompts triggered by Unity. Alternatively, you can manually run the API updater (Unity menu `Assets` > `Run API Updater...`) after the import has completed.
 
 
 ### Related Repositories
