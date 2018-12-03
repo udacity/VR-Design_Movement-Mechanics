@@ -16,6 +16,8 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
+#pragma warning disable 0618 // Ignore GvrAudio* deprecation
+
 /// A custom editor for properties on the GvrAudioSource script. This appears in the Inspector
 /// window of a GvrAudioSource object.
 [CustomEditor(typeof(GvrAudioSource))]
@@ -251,3 +253,5 @@ public class GvrAudioSourceEditor : Editor {
     GUILayout.Box(directivityTexture);
   }
 }
+
+#pragma warning restore 0618 // Restore warnings

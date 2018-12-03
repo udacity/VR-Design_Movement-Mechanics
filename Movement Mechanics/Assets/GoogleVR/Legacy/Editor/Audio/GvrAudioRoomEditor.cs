@@ -16,6 +16,8 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
+#pragma warning disable 0618 // Ignore GvrAudio* deprecation
+
 /// A custom editor for properties on the GvrAudioRoom script. This appears in the Inspector window
 /// of a GvrAudioRoom object.
 [CustomEditor(typeof(GvrAudioRoom))]
@@ -112,3 +114,5 @@ public class GvrAudioRoomEditor : Editor {
     EditorGUILayout.PropertyField(surfaceMaterial, surfaceMaterialLabel);
   }
 }
+
+#pragma warning restore 0618 // Restore warnings

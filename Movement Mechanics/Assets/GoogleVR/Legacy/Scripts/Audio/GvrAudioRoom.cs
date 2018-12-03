@@ -15,8 +15,13 @@
 using UnityEngine;
 using System.Collections;
 
+#pragma warning disable 0618 // Ignore GvrAudio* deprecation
+
 /// GVR audio room component that simulates environmental effects of a room with respect to the
 /// properties of the attached game object.
+#if UNITY_2017_1_OR_NEWER
+[System.Obsolete("Please upgrade to Resonance Audio (https://developers.google.com/resonance-audio/migrate).")]
+#endif  // UNITY_2017_1_OR_NEWER
 [AddComponentMenu("GoogleVR/Audio/GvrAudioRoom")]
 public class GvrAudioRoom : MonoBehaviour {
   /// Material type that determines the acoustic properties of a room surface.
@@ -79,6 +84,14 @@ public class GvrAudioRoom : MonoBehaviour {
   /// Size of the room (normalized with respect to scale of the game object).
   public Vector3 size = Vector3.one;
 
+  void Awake() {
+#if UNITY_EDITOR && UNITY_2017_1_OR_NEWER
+    Debug.LogWarningFormat(gameObject,
+        "Game object '{0}' uses deprecated {1} component.\nPlease upgrade to Resonance Audio ({2}).",
+        name, GetType().Name, "https://developers.google.com/resonance-audio/migrate");
+#endif  // UNITY_EDITOR && UNITY_2017_1_OR_NEWER
+  }
+
   void OnEnable () {
     GvrAudio.UpdateAudioRoom(this, GvrAudio.IsListenerInsideRoom(this));
   }
@@ -98,3 +111,5 @@ public class GvrAudioRoom : MonoBehaviour {
     Gizmos.DrawWireCube(Vector3.zero, size);
   }
 }
+
+#pragma warning restore 0618 // Restore warnings
