@@ -48,3 +48,8 @@ This course asset includes a Unity project with three scenes showcasing various 
 - VR Design - Movement Mechanics
 - [VR Design - Presenting the Work](https://github.com/udacity/VR-Design_Presenting-the-Work/releases)
 - [VR Design - Puzzler](https://github.com/udacity/VR-Design_Puzzler/releases)
+
+ # Archival Note 
+ This repository is deprecated; therefore, we are going to archive it. However, learners will be able to fork it to their personal Github account but cannot submit PRs to this repository. If you have any issues or suggestions to make, feel free to: 
+- Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues. 
+- Submit a support ticket along with the link to your forked repository if (learners are) blocked for other reasons. Here are the links for the [retail consumers](https://udacity.zendesk.com/hc/en-us/requests/new) and [enterprise learners](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131).
